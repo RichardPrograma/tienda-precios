@@ -1,0 +1,1459 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+
+  --primary: #111827;
+  --primary-soft: #374151;
+
+  --accent: #2563eb;
+  --accent-soft: #eff6ff;
+
+  --success: #16a34a;
+  --success-soft: #dcfce7;
+
+  --danger: #dc2626;
+  --danger-soft: #fee2e2;
+
+  --radius: 18px;
+
+  --shadow:
+    0 12px 30px
+    rgba(0, 0, 0, 0.08);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  min-height: 100vh;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: var(--bg);
+
+  color: var(--text);
+}
+
+
+button,
+input {
+  font: inherit;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+
+/* ======================================================
+   CONTENEDOR
+====================================================== */
+
+.app-shell {
+  width: min(100%, 900px);
+
+  margin: 0 auto;
+
+  padding:
+    18px
+    14px
+    40px;
+}
+
+
+/* ======================================================
+   ENCABEZADO
+====================================================== */
+
+.topbar {
+  display: flex;
+
+  align-items: center;
+
+  justify-content:
+    space-between;
+
+  gap: 16px;
+
+  margin-bottom: 18px;
+}
+
+
+.title-area {
+  min-width: 0;
+}
+
+
+.eyebrow {
+  font-size: 12px;
+
+  color: var(--muted);
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 4px;
+}
+
+
+.topbar h1 {
+  font-size:
+    clamp(
+      24px,
+      5vw,
+      34px
+    );
+
+  line-height: 1.1;
+}
+
+
+/* ======================================================
+   BOTONES SUPERIORES
+====================================================== */
+
+.header-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  flex-shrink: 0;
+}
+
+
+/* ======================================================
+   BOTÓN MANUAL
+====================================================== */
+
+.manual-btn {
+  border: none;
+
+  background: var(--primary);
+
+  color: white;
+
+  min-width: 48px;
+
+  height: 48px;
+
+  padding:
+    0
+    14px;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  font-weight: 700;
+
+  box-shadow: var(--shadow);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.manual-btn:hover {
+  background:
+    var(--primary-soft);
+}
+
+
+.manual-btn:active {
+  transform: scale(0.97);
+}
+
+
+.manual-btn span {
+  display: inline-block;
+}
+
+
+/* ======================================================
+   BOTÓN CUENTA
+====================================================== */
+
+.cuenta-btn {
+  position: relative;
+
+  border:
+    1px solid
+    var(--border);
+
+  background: white;
+
+  color: var(--text);
+
+  min-width: 48px;
+
+  height: 48px;
+
+  padding:
+    0
+    14px;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  font-weight: 700;
+
+  box-shadow: var(--shadow);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.cuenta-btn:hover {
+  background: #f9fafb;
+}
+
+
+.cuenta-btn:active {
+  transform: scale(0.97);
+}
+
+
+.cuenta-icon {
+  font-size: 20px;
+}
+
+
+.cuenta-badge {
+  position: absolute;
+
+  top: -7px;
+
+  right: -7px;
+
+  min-width: 22px;
+
+  height: 22px;
+
+  padding:
+    0
+    6px;
+
+  border-radius: 999px;
+
+  border:
+    2px solid
+    white;
+
+  background:
+    var(--danger);
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  box-shadow:
+    0 3px 8px
+    rgba(0, 0, 0, 0.18);
+}
+
+
+.cuenta-badge.oculto {
+  display: none;
+}
+
+
+/* ======================================================
+   BUSCADOR
+====================================================== */
+
+.search-card,
+.results-card {
+  background: var(--card);
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    var(--radius);
+
+  box-shadow:
+    var(--shadow);
+}
+
+
+.search-card {
+  padding: 16px;
+
+  margin-bottom: 14px;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 10;
+}
+
+
+.search-card label {
+  display: block;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  margin-bottom: 8px;
+}
+
+
+.search-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border:
+    2px solid
+    var(--border);
+
+  border-radius: 14px;
+
+  padding:
+    0
+    12px;
+
+  background: white;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.search-box:focus-within {
+  border-color:
+    var(--accent);
+
+  box-shadow:
+    0 0 0 4px
+    rgba(37, 99, 235, 0.1);
+}
+
+
+.search-box > span {
+  font-size: 22px;
+
+  color: var(--muted);
+
+  flex-shrink: 0;
+}
+
+
+.search-box input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  min-height: 50px;
+
+  background: transparent;
+
+  color: var(--text);
+}
+
+
+.search-box input::placeholder {
+  color: #9ca3af;
+}
+
+
+#limpiar {
+  border: none;
+
+  background: transparent;
+
+  color: var(--muted);
+
+  font-size: 26px;
+
+  line-height: 1;
+
+  padding:
+    4px
+    6px;
+}
+
+
+#limpiar:hover {
+  color:
+    var(--danger);
+}
+
+
+.search-status {
+  font-size: 13px;
+
+  color: var(--muted);
+
+  margin-top: 10px;
+
+  min-height: 18px;
+}
+
+
+/* ======================================================
+   TABLA
+====================================================== */
+
+.results-card {
+  overflow: hidden;
+}
+
+
+.table-wrap {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+
+table {
+  width: 100%;
+
+  border-collapse:
+    collapse;
+
+  min-width: 520px;
+}
+
+
+thead {
+  background: #f9fafb;
+}
+
+
+th {
+  text-align: left;
+
+  font-size: 12px;
+
+  color: var(--muted);
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+
+  padding:
+    13px
+    14px;
+
+  border-bottom:
+    1px solid
+    var(--border);
+}
+
+
+td {
+  padding:
+    14px;
+
+  border-bottom:
+    1px solid
+    var(--border);
+
+  vertical-align: middle;
+}
+
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+tbody tr {
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+
+
+tbody tr:hover {
+  background: #f9fafb;
+}
+
+
+.product-name {
+  font-weight: 700;
+}
+
+
+.category-badge {
+  display: inline-block;
+
+  padding:
+    5px
+    9px;
+
+  border-radius: 999px;
+
+  background: #f3f4f6;
+
+  color: #374151;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+.price {
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+
+.no-price {
+  color: var(--muted);
+
+  font-weight: 700;
+}
+
+
+.empty-row td {
+  text-align: center;
+
+  color: var(--muted);
+
+  padding:
+    30px
+    16px;
+}
+
+
+/* ======================================================
+   PRODUCTO CLICKEABLE
+====================================================== */
+
+.product-row {
+  cursor: pointer;
+}
+
+
+.product-row:active {
+  background:
+    var(--accent-soft);
+
+  transform:
+    scale(0.995);
+}
+
+
+.producto-agregado {
+  background:
+    var(--success-soft)
+    !important;
+}
+
+
+.tap-hint {
+  margin-top: 4px;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  color: #9ca3af;
+}
+
+
+.tap-hint.sin-precio {
+  color: #b45309;
+}
+
+
+.product-row.disabled-product {
+  cursor: default;
+}
+
+
+/* ======================================================
+   MODALES
+====================================================== */
+
+.modal {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 100;
+
+  display: none;
+}
+
+
+.modal.active {
+  display: block;
+}
+
+
+.modal-backdrop {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    rgba(
+      17,
+      24,
+      39,
+      0.55
+    );
+
+  backdrop-filter:
+    blur(2px);
+}
+
+
+/* ======================================================
+   PANEL MANUAL
+====================================================== */
+
+.manual-panel {
+  position: absolute;
+
+  right: 0;
+
+  top: 0;
+
+  width:
+    min(
+      92vw,
+      520px
+    );
+
+  height: 100%;
+
+  background: white;
+
+  box-shadow:
+    -14px 0 35px
+    rgba(0, 0, 0, 0.16);
+
+  padding: 18px;
+
+  overflow-y: auto;
+
+  animation:
+    entrarPanel
+    0.25s ease;
+}
+
+
+/* ======================================================
+   PANEL CUENTA
+====================================================== */
+
+.cuenta-panel {
+  position: absolute;
+
+  right: 0;
+
+  top: 0;
+
+  width:
+    min(
+      94vw,
+      560px
+    );
+
+  height: 100%;
+
+  background: white;
+
+  box-shadow:
+    -14px 0 35px
+    rgba(0, 0, 0, 0.16);
+
+  padding: 18px;
+
+  overflow-y: auto;
+
+  animation:
+    entrarPanel
+    0.25s ease;
+}
+
+
+@keyframes entrarPanel {
+
+  from {
+    transform:
+      translateX(100%);
+  }
+
+  to {
+    transform:
+      translateX(0);
+  }
+
+}
+
+
+/* ======================================================
+   HEADERS MODALES
+====================================================== */
+
+.manual-header,
+.cuenta-header {
+  display: flex;
+
+  align-items:
+    flex-start;
+
+  justify-content:
+    space-between;
+
+  gap: 16px;
+
+  margin-bottom: 18px;
+}
+
+
+.manual-header h2,
+.cuenta-header h2 {
+  font-size: 24px;
+
+  margin-bottom: 4px;
+}
+
+
+.manual-count,
+.cuenta-subtitulo {
+  font-size: 13px;
+
+  color: var(--muted);
+}
+
+
+.close-btn {
+  border: none;
+
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 12px;
+
+  background: #f3f4f6;
+
+  color: var(--text);
+
+  font-size: 26px;
+
+  line-height: 1;
+
+  flex-shrink: 0;
+}
+
+
+.close-btn:hover {
+  background: #e5e7eb;
+}
+
+
+/* ======================================================
+   BUSCADOR MANUAL
+====================================================== */
+
+.manual-search-box {
+  margin-bottom: 16px;
+}
+
+
+.manual-search-box input {
+  width: 100%;
+
+  min-height: 48px;
+
+  border:
+    2px solid
+    var(--border);
+
+  border-radius: 13px;
+
+  padding:
+    0
+    14px;
+
+  outline: none;
+}
+
+
+.manual-search-box input:focus {
+  border-color:
+    var(--accent);
+
+  box-shadow:
+    0 0 0 4px
+    rgba(37, 99, 235, 0.1);
+}
+
+
+/* ======================================================
+   MANUAL
+====================================================== */
+
+.manual-content {
+  display: flex;
+
+  flex-direction:
+    column;
+
+  gap: 12px;
+}
+
+
+.manual-category {
+  border:
+    1px solid
+    var(--border);
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  background: white;
+}
+
+
+.manual-category button {
+  width: 100%;
+
+  border: none;
+
+  background: #f9fafb;
+
+  padding: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content:
+    space-between;
+
+  gap: 10px;
+
+  font-weight: 800;
+
+  text-align: left;
+}
+
+
+.manual-category button:hover {
+  background: #f3f4f6;
+}
+
+
+.manual-category-list {
+  display: none;
+
+  padding:
+    8px
+    14px
+    14px;
+}
+
+
+.manual-category.open
+.manual-category-list {
+  display: block;
+}
+
+
+.manual-item {
+  padding:
+    10px
+    0;
+
+  border-bottom:
+    1px solid
+    var(--border);
+}
+
+
+.manual-item:last-child {
+  border-bottom: none;
+}
+
+
+.manual-item-name {
+  font-weight: 700;
+
+  margin-bottom: 3px;
+}
+
+
+.manual-item-meta {
+  font-size: 12px;
+
+  color: var(--muted);
+}
+
+
+.manual-empty {
+  text-align: center;
+
+  color: var(--muted);
+
+  padding:
+    24px
+    10px;
+}
+
+
+/* ======================================================
+   CUENTA
+====================================================== */
+
+.cuenta-contenido {
+  display: flex;
+
+  flex-direction:
+    column;
+
+  gap: 10px;
+
+  margin-bottom: 18px;
+}
+
+
+.cuenta-item {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto
+    auto
+    auto;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 13px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius: 14px;
+
+  background: white;
+}
+
+
+.cuenta-item-info {
+  display: flex;
+
+  flex-direction:
+    column;
+
+  gap: 3px;
+
+  min-width: 0;
+}
+
+
+.cuenta-item-info strong {
+  overflow: hidden;
+
+  text-overflow:
+    ellipsis;
+}
+
+
+.cuenta-item-info span {
+  font-size: 12px;
+
+  color: var(--muted);
+}
+
+
+.cuenta-item-controles {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+
+.cantidad-btn {
+  width: 32px;
+
+  height: 32px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #f3f4f6;
+
+  color: var(--text);
+
+  font-size: 20px;
+
+  line-height: 1;
+}
+
+
+.cantidad-btn:hover {
+  background: #e5e7eb;
+}
+
+
+.cantidad-numero {
+  min-width: 24px;
+
+  text-align: center;
+
+  font-weight: 800;
+}
+
+
+.cuenta-subtotal {
+  white-space: nowrap;
+}
+
+
+.eliminar-item-btn {
+  width: 30px;
+
+  height: 30px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background:
+    var(--danger-soft);
+
+  color:
+    var(--danger);
+
+  font-size: 20px;
+
+  line-height: 1;
+}
+
+
+.eliminar-item-btn:hover {
+  background: #fecaca;
+}
+
+
+/* ======================================================
+   CUENTA VACÍA
+====================================================== */
+
+.cuenta-vacia {
+  padding:
+    38px
+    15px;
+
+  text-align: center;
+
+  color: var(--muted);
+
+  border:
+    1px dashed
+    var(--border);
+
+  border-radius: 15px;
+
+  background: #f9fafb;
+}
+
+
+.cuenta-vacia-icon {
+  display: block;
+
+  font-size: 38px;
+
+  margin-bottom: 10px;
+}
+
+
+.cuenta-vacia p {
+  font-weight: 700;
+
+  color: var(--text);
+
+  margin-bottom: 5px;
+}
+
+
+/* ======================================================
+   AGREGACIÓN
+====================================================== */
+
+.agregacion-box {
+  margin-top: 20px;
+
+  padding: 15px;
+
+  border-radius: 15px;
+
+  border:
+    1px solid
+    var(--border);
+
+  background: #f9fafb;
+}
+
+
+.agregacion-box h3 {
+  margin-bottom: 4px;
+}
+
+
+.agregacion-box p {
+  font-size: 13px;
+
+  color: var(--muted);
+
+  margin-bottom: 12px;
+}
+
+
+.agregacion-input {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+.agregacion-input > span {
+  font-weight: 800;
+
+  font-size: 18px;
+}
+
+
+.agregacion-input input {
+  min-width: 0;
+
+  flex: 1;
+
+  height: 45px;
+
+  border:
+    2px solid
+    var(--border);
+
+  border-radius: 11px;
+
+  padding:
+    0
+    10px;
+
+  outline: none;
+
+  background: white;
+}
+
+
+.agregacion-input input:focus {
+  border-color:
+    var(--accent);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(37, 99, 235, 0.08);
+}
+
+
+.agregacion-input button {
+  height: 45px;
+
+  border: none;
+
+  border-radius: 11px;
+
+  padding:
+    0
+    16px;
+
+  background:
+    var(--primary);
+
+  color: white;
+
+  font-weight: 700;
+}
+
+
+.agregacion-input button:hover {
+  background:
+    var(--primary-soft);
+}
+
+
+.agregacion-item {
+  background: #f9fafb;
+}
+
+
+/* ======================================================
+   TOTAL
+====================================================== */
+
+.cuenta-total {
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  align-items: center;
+
+  margin-top: 20px;
+
+  padding:
+    18px
+    5px;
+
+  border-top:
+    2px solid
+    var(--border);
+
+  font-size: 20px;
+}
+
+
+.cuenta-total strong {
+  font-size: 28px;
+}
+
+
+/* ======================================================
+   VACIAR CUENTA
+====================================================== */
+
+.vaciar-cuenta-btn {
+  width: 100%;
+
+  min-height: 48px;
+
+  margin-top: 8px;
+
+  border: none;
+
+  border-radius: 13px;
+
+  background:
+    var(--danger-soft);
+
+  color: #b91c1c;
+
+  font-weight: 800;
+}
+
+
+.vaciar-cuenta-btn:hover {
+  background: #fecaca;
+}
+
+
+/* ======================================================
+   CELULAR
+====================================================== */
+
+@media (max-width: 640px) {
+
+  .app-shell {
+    padding:
+      12px
+      10px
+      28px;
+  }
+
+
+  .topbar {
+    margin-bottom: 12px;
+
+    gap: 8px;
+  }
+
+
+  .header-actions {
+    gap: 6px;
+  }
+
+
+  .manual-btn,
+  .cuenta-btn {
+    width: 46px;
+
+    min-width: 46px;
+
+    padding: 0;
+  }
+
+
+  .manual-btn span,
+  .cuenta-texto {
+    display: none;
+  }
+
+
+  .search-card {
+    padding: 12px;
+
+    top: 0;
+
+    border-radius: 15px;
+  }
+
+
+  .results-card {
+    border-radius: 15px;
+  }
+
+
+  table {
+    min-width: 100%;
+  }
+
+
+  th:nth-child(2),
+  td:nth-child(2) {
+    display: none;
+  }
+
+
+  th,
+  td {
+    padding:
+      13px
+      12px;
+  }
+
+
+  th:last-child,
+  td:last-child {
+    text-align: right;
+  }
+
+
+  .manual-panel,
+  .cuenta-panel {
+    width: 100%;
+  }
+
+
+  .cuenta-item {
+    grid-template-columns:
+      minmax(0, 1fr)
+      auto
+      auto;
+
+    gap: 8px;
+  }
+
+
+  .cuenta-item-controles {
+    grid-column:
+      1 / -1;
+
+    justify-content:
+      flex-start;
+  }
+
+
+  .cuenta-subtotal {
+    font-size: 15px;
+  }
+
+
+  .agregacion-input button {
+    padding:
+      0
+      12px;
+  }
+
+}
+
+
+/* ======================================================
+   PANTALLAS PEQUEÑAS
+====================================================== */
+
+@media (max-width: 380px) {
+
+  .topbar h1 {
+    font-size: 21px;
+  }
+
+
+  .search-card label {
+    font-size: 13px;
+  }
+
+
+  .search-box input {
+    font-size: 14px;
+  }
+
+
+  .cuenta-total strong {
+    font-size: 24px;
+  }
+
+}

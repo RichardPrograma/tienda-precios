@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="theme-color"
+    content="#111827"
+  />
+
+  <title>Precios de la tienda</title>
+
+  <link
+    rel="stylesheet"
+    href="css/styles.css"
+  />
+</head>
+
+<body>
+
+  <main class="app-shell">
+
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
+
+    <header class="topbar">
+
+      <div class="title-area">
+
+        <p class="eyebrow">
+          Consulta rápida
+        </p>
+
+        <h1>
+          Precios de la tienda
+        </h1>
+
+      </div>
+
+
+      <div class="header-actions">
+
+        <!-- CUENTA -->
+        <button
+          id="btnCuenta"
+          class="cuenta-btn"
+          type="button"
+          aria-label="Abrir cuenta"
+        >
+
+          <span
+            class="cuenta-icon"
+            aria-hidden="true"
+          >
+            🧾
+          </span>
+
+          <span
+            id="contadorCuenta"
+            class="cuenta-badge oculto"
+          >
+            0
+          </span>
+
+          <span class="cuenta-texto">
+            Cuenta
+          </span>
+
+        </button>
+
+
+        <!-- MANUAL -->
+        <button
+          id="btnManual"
+          class="manual-btn"
+          type="button"
+          aria-label="Abrir manual"
+        >
+          ?
+
+          <span>
+            Manual
+          </span>
+        </button>
+
+      </div>
+
+    </header>
+
+
+    <!-- =========================
+         BUSCADOR
+    ========================== -->
+
+    <section
+      class="search-card"
+      aria-label="Buscador de productos"
+    >
+
+      <label for="buscador">
+        Buscar producto, marca o categoría
+      </label>
+
+
+      <div class="search-box">
+
+        <span aria-hidden="true">
+          ⌕
+        </span>
+
+
+        <input
+          id="buscador"
+          type="search"
+          autocomplete="off"
+          placeholder="Ej. coca, refre, orbit, dulces..."
+        />
+
+
+        <button
+          id="limpiar"
+          type="button"
+          aria-label="Limpiar búsqueda"
+        >
+          ×
+        </button>
+
+      </div>
+
+
+      <p
+        id="estadoBusqueda"
+        class="search-status"
+      >
+        Escribe para comenzar a filtrar.
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         RESULTADOS
+    ========================== -->
+
+    <section class="results-card">
+
+      <div class="table-wrap">
+
+        <table>
+
+          <thead>
+
+            <tr>
+              <th>Producto</th>
+              <th>Categoría</th>
+              <th>Precio</th>
+            </tr>
+
+          </thead>
+
+
+          <tbody id="resultados">
+
+            <tr class="empty-row">
+
+              <td colspan="3">
+                Escribe una letra para ver resultados.
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- ==================================================
+       MANUAL
+  =================================================== -->
+
+  <div
+    id="manualModal"
+    class="modal"
+    aria-hidden="true"
+  >
+
+    <div
+      class="modal-backdrop"
+      data-close-manual
+    ></div>
+
+
+    <section
+      class="manual-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="manualTitulo"
+    >
+
+      <div class="manual-header">
+
+        <div>
+
+          <p class="eyebrow">
+            Guía de categorías
+          </p>
+
+          <h2 id="manualTitulo">
+            Manual de productos
+          </h2>
+
+          <p
+            id="contadorProductos"
+            class="manual-count"
+          ></p>
+
+        </div>
+
+
+        <button
+          id="cerrarManual"
+          class="close-btn"
+          type="button"
+          aria-label="Cerrar manual"
+        >
+          ×
+        </button>
+
+      </div>
+
+
+      <div class="manual-search-box">
+
+        <input
+          id="buscarManual"
+          type="search"
+          autocomplete="off"
+          placeholder="Buscar dentro del manual..."
+        />
+
+      </div>
+
+
+      <div
+        id="manualContenido"
+        class="manual-content"
+      ></div>
+
+    </section>
+
+  </div>
+
+
+
+  <!-- ==================================================
+       CUENTA
+  =================================================== -->
+
+  <div
+    id="cuentaModal"
+    class="modal"
+    aria-hidden="true"
+  >
+
+    <div
+      class="modal-backdrop"
+      data-close-cuenta
+    ></div>
+
+
+    <section
+      class="cuenta-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="cuentaTitulo"
+    >
+
+      <!-- ENCABEZADO CUENTA -->
+      <div class="cuenta-header">
+
+        <div>
+
+          <p class="eyebrow">
+            Venta actual
+          </p>
+
+          <h2 id="cuentaTitulo">
+            Cuenta
+          </h2>
+
+          <p class="cuenta-subtitulo">
+            Productos seleccionados
+          </p>
+
+        </div>
+
+
+        <button
+          id="cerrarCuenta"
+          class="close-btn"
+          type="button"
+          aria-label="Cerrar cuenta"
+        >
+          ×
+        </button>
+
+      </div>
+
+
+      <!-- PRODUCTOS DE LA CUENTA -->
+      <div
+        id="cuentaContenido"
+        class="cuenta-contenido"
+      ></div>
+
+
+      <!-- AGREGACIÓN -->
+      <section class="agregacion-box">
+
+        <div class="agregacion-title">
+
+          <div>
+
+            <h3>
+              Agregación
+            </h3>
+
+            <p>
+              Agrega un precio manual que no esté registrado.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="agregacion-input">
+
+          <span>
+            $
+          </span>
+
+          <input
+            id="montoAgregacion"
+            type="number"
+            inputmode="decimal"
+            min="0"
+            step="0.01"
+            placeholder="0.00"
+          />
+
+
+          <button
+            id="btnAgregarMonto"
+            type="button"
+          >
+            Agregar
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- TOTAL -->
+      <div class="cuenta-total">
+
+        <span>
+          Total
+        </span>
+
+        <strong id="totalCuenta">
+          $0.00
+        </strong>
+
+      </div>
+
+
+      <!-- VACIAR -->
+      <button
+        id="btnVaciarCuenta"
+        class="vaciar-cuenta-btn"
+        type="button"
+      >
+        Vaciar cuenta
+      </button>
+
+    </section>
+
+  </div>
+
+
+
+  <!-- ==================================================
+       JAVASCRIPT
+  =================================================== -->
+
+  <script src="js/productos.js"></script>
+
+  <script src="js/buscador.js"></script>
+
+  <script src="js/cuenta.js"></script>
+
+</body>
+</html>
