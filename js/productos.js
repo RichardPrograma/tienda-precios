@@ -14,9 +14,9 @@ const productos = [
 
   {"id":7,"nombre":"Refresco de sabores 600 ml","precio":23,"categoria":"Refrescos","alias":["sabores","600","600 ml","refresco","refrescos","sprite","mundet","sidral mundet","manzana","manzanita","fanta","fresca","delaware","delaware punch","uva"]},
 
-  {"id":8,"nombre":"Coca-Cola 3 L","precio":null,"categoria":"Refrescos","alias":["coca","coca cola","3l","3 litros","refresco","refrescos"]},
+  {"id":8,"nombre":"Coca-Cola 3 L","precio":62,"categoria":"Refrescos","alias":["coca","coca cola","3l","3 litros","refresco","refrescos"]},
 
-  {"id":9,"nombre":"Coca-Cola 2.5 L","precio":null,"categoria":"Refrescos","alias":["coca","coca cola","2.5l","2 5 litros","refresco","refrescos"]},
+  {"id":9,"nombre":"Coca-Cola 2.5 L","precio":55,"categoria":"Refrescos","alias":["coca","coca cola","2.5l","2 5 litros","refresco","refrescos"]},
 
   {"id":10,"nombre":"Coca-Cola 1.25 L","precio":33,"categoria":"Refrescos","alias":["coca","coca cola","1.25l","1 25 litros","refresco","refrescos"]},
 
@@ -24,9 +24,9 @@ const productos = [
 
   {"id":12,"nombre":"Powerade","precio":28,"categoria":"Bebidas","alias":["power","powerade","hidratante","deportiva","bebida","bebidas"]},
 
-  {"id":13,"nombre":"Del Valle durazno","precio":null,"categoria":"Jugos","alias":["valle","del valle","durazno","jugo","jugos"]},
+  {"id":13,"nombre":"Del Valle durazno","precio":14,"categoria":"Jugos","alias":["valle","del valle","durazno","jugo","jugos"]},
 
-  {"id":14,"nombre":"Jugo en caja","precio":13,"categoria":"Jugos","alias":["jugo","jugos","caja","juguito"]},
+  {"id":14,"nombre":"Jugo en caja","precio":14,"categoria":"Jugos","alias":["jugo","jugos","caja","juguito"]},
 
   {"id":15,"nombre":"Boing caja","precio":20,"categoria":"Jugos","alias":["boing","jugo","jugos","caja"]},
 
@@ -78,9 +78,9 @@ const productos = [
 
   {"id":39,"nombre":"Peñafiel Twist","precio":24,"categoria":"Refrescos","alias":["peñafiel","penafiel","twist","refresco","refrescos"]},
 
-  {"id":40,"nombre":"Pepsi 3 L","precio":null,"categoria":"Refrescos","alias":["pepsi","3l","3 litros","refresco","refrescos"]},
+  {"id":40,"nombre":"Pepsi 3 L","precio":47,"categoria":"Refrescos","alias":["pepsi","3l","3 litros","refresco","refrescos"]},
 
-  {"id":41,"nombre":"Pepsi 2.5 L","precio":null,"categoria":"Refrescos","alias":["pepsi","2.5l","2 5 litros","refresco","refrescos"]},
+  {"id":41,"nombre":"Pepsi 2.5 L","precio":40,"categoria":"Refrescos","alias":["pepsi","2.5l","2 5 litros","refresco","refrescos"]},
 
   {"id":42,"nombre":"Refresco de sabores 1.5 L","precio":27,"categoria":"Refrescos","alias":["sabores","1.5l","1 5 litros","refresco","refrescos","sprite","mundet","sidral mundet","manzana","manzanita","fanta","fresca","delaware","delaware punch","uva"]},
 
@@ -116,39 +116,39 @@ const productos = [
 
   {"id":58,"nombre":"Lucky","precio":5,"categoria":"Cigarros","alias":["lucky","cigarro","cigarros"]},
 
-  {"id":59,"nombre":"Danone","precio":null,"categoria":"Lácteos","alias":["danone","yogurt","lacteo","lacteos"]},
+  {"id":59,"nombre":"Danone","precio":20,"categoria":"Lácteos","alias":["danone","yogurt","lacteo","lacteos"]},
 
-  {"id":60,"nombre":"DanUp chico","precio":null,"categoria":"Lácteos","alias":["danup","dan up","chico","yogurt","lacteo","lacteos"]},
+  {"id":60,"nombre":"DanUp chico","precio":20,"categoria":"Lácteos","alias":["danup","dan up","chico","yogurt","lacteo","lacteos"]},
 
-  {"id":61,"nombre":"DanUp grande","precio":null,"categoria":"Lácteos","alias":["danup","dan up","grande","yogurt","lacteo","lacteos"]},
+  {"id":61,"nombre":"DanUp grande","precio":27,"categoria":"Lácteos","alias":["danup","dan up","grande","yogurt","lacteo","lacteos"]},
 
-  {"id":62,"nombre":"BeneGastro","precio":null,"categoria":"Lácteos","alias":["benegastro","bene gastro","yogurt","lacteo","lacteos"]},
+  {"id":62,"nombre":"BeneGastro","precio":22,"categoria":"Lácteos","alias":["benegastro","bene gastro","yogurt","lacteo","lacteos"]},
 
-  {"id":63,"nombre":"Activia","precio":null,"categoria":"Lácteos","alias":["activia","yogurt","lacteo","lacteos"]},
+  {"id":63,"nombre":"Activia","precio":22,"categoria":"Lácteos","alias":["activia","yogurt","lacteo","lacteos"]},
 
-  {"id":64,"nombre":"Oikos Pro","precio":null,"categoria":"Lácteos","alias":["oikos","oikos pro","yogurt","lacteo","lacteos"]},
+  {"id":64,"nombre":"Oikos Pro","precio":32,"categoria":"Lácteos","alias":["oikos","oikos pro","yogurt","lacteo","lacteos"]},
 
-  {"id":65,"nombre":"Nescafé Black","precio":null,"categoria":"Bebidas","alias":["nescafe","cafe","café","black","bebida","bebidas"]},
+  {"id":65,"nombre":"Nescafé Black","precio":32,"categoria":"Bebidas","alias":["nescafe","cafe","café","black","bebida","bebidas"]},
 
-  {"id":66,"nombre":"Café Olé","precio":null,"categoria":"Bebidas","alias":["cafe ole","café olé","cafe","café","bebida","bebidas"]},
+  {"id":66,"nombre":"Café Olé","precio":45,"categoria":"Bebidas","alias":["cafe ole","café olé","cafe","café","bebida","bebidas"]},
 
   {"id":67,"nombre":"Danone Mix","precio":null,"categoria":"Lácteos","alias":["danone","mix","yogurt","lacteo","lacteos"]},
 
   {"id":68,"nombre":"Yogurt griego fresa","precio":null,"categoria":"Lácteos","alias":["griego","fresa","yogurt","lacteo","lacteos","friego fresa"]},
 
-  {"id":69,"nombre":"Danonino Lunch","precio":null,"categoria":"Lácteos","alias":["danonino","lunch","yogurt","lacteo","lacteos"]},
+  {"id":69,"nombre":"Danonino apachurrable","precio":18,"categoria":"Lácteos","alias":["danonino","danonino lunch","lunch","apachurrable","apachu","yogurt","lacteo","lacteos"]},
 
-  {"id":70,"nombre":"Dany bebible","precio":null,"categoria":"Lácteos","alias":["dany","bebible","yogurt","lacteo","lacteos"]},
+  {"id":70,"nombre":"Dany apachurrable","precio":18,"categoria":"Lácteos","alias":["dany","dany bebible","bebible","apachurrable","apachu","yogurt","lacteo","lacteos"]},
 
-  {"id":71,"nombre":"Alpura","precio":null,"categoria":"Lácteos","alias":["alpura","leche","lacteo","lacteos"]},
+  {"id":71,"nombre":"Alpura","precio":33,"categoria":"Lácteos","alias":["alpura","leche","lacteo","lacteos"]},
 
-  {"id":72,"nombre":"Alpura deslactosada","precio":null,"categoria":"Lácteos","alias":["alpura","deslactosada","leche","lacteo","lacteos"]},
+  {"id":72,"nombre":"Alpura deslactosada","precio":33,"categoria":"Lácteos","alias":["alpura","deslactosada","leche","lacteo","lacteos"]},
 
-  {"id":73,"nombre":"Santa Clara","precio":null,"categoria":"Lácteos","alias":["santa clara","leche","lacteo","lacteos"]},
+  {"id":73,"nombre":"Santa Clara","precio":35,"categoria":"Lácteos","alias":["santa clara","leche","lacteo","lacteos"]},
 
-  {"id":74,"nombre":"Nutri","precio":null,"categoria":"Lácteos","alias":["nutri","leche","lacteo","lacteos"]},
+  {"id":74,"nombre":"Nutri","precio":27,"categoria":"Lácteos","alias":["nutri","leche","lacteo","lacteos"]},
 
-  {"id":75,"nombre":"Kinder Délice","precio":null,"categoria":"Dulces","alias":["kinder","delice","délice","dulce","dulces","pastelito"]},
+  {"id":75,"nombre":"Kinder Délice","precio":16,"categoria":"Dulces","alias":["kinder","delice","délice","dulce","dulces","pastelito"]},
 
   {"id":76,"nombre":"Kinder Chocolate barra chica","precio":8,"categoria":"Dulces","alias":["kinder","chocolate","barra","chica","dulce","dulces"]},
 
@@ -182,7 +182,7 @@ const productos = [
 
   {"id":91,"nombre":"Papas grandes","precio":47,"categoria":"Botanas","alias":["papas","papitas","grandes","papas grandes","sabritas grandes","doritos grandes","ruffles grandes","botana","botanas","fritura"]},
 
-  {"id":92,"nombre":"Sabritones","precio":null,"categoria":"Botanas","alias":["sabritones","papas","papitas","botana","botanas","fritura"]},
+  {"id":92,"nombre":"Sabritones","precio":46,"categoria":"Botanas","alias":["sabritones","papas","papitas","botana","botanas","fritura"]},
 
   {"id":93,"nombre":"Paquetaxo","precio":27,"categoria":"Botanas","alias":["paquetaxo","papas","papitas","botana","botanas","fritura"]},
 
@@ -298,6 +298,388 @@ const productos = [
 
   {"id":149,"nombre":"Importe $8","precio":8,"categoria":"Importes","alias":["importe","importes","importe 8","8 pesos"]},
 
-  {"id":150,"nombre":"Importe $10","precio":10,"categoria":"Importes","alias":["importe","importes","importe 10","10 pesos"]}
+  {"id":150,"nombre":"Importe $10","precio":10,"categoria":"Importes","alias":["importe","importes","importe 10","10 pesos"]},
+
+  {"id":151,"nombre":"Bimbo Croissantines Chocolate 32g","precio":8,"categoria":"Pan dulce","alias":["bimbo","croissantines","chocolate","32g","pan dulce"]},
+
+  {"id":152,"nombre":"Bimbo Hotkis Cajeta 1p","precio":8,"categoria":"Pan dulce","alias":["bimbo","hotkis","cajeta","1p","pan dulce"]},
+
+  {"id":153,"nombre":"Bimbo Rebanadas","precio":10,"categoria":"Pan dulce","alias":["bimbo","rebanadas","pan dulce"]},
+
+  {"id":154,"nombre":"Bimbo Donitas Espolvoreadas","precio":10,"categoria":"Pan dulce","alias":["bimbo","donitas","espolvoreadas","pan dulce"]},
+
+  {"id":155,"nombre":"Bimbo Concha Vainilla 1p","precio":10,"categoria":"Pan dulce","alias":["bimbo","concha","vainilla","1p","pan dulce"]},
+
+  {"id":156,"nombre":"Bimbo Mantecadas Vainilla 2p","precio":12,"categoria":"Pan dulce","alias":["bimbo","mantecadas","vainilla","2p","pan dulce"]},
+
+  {"id":157,"nombre":"Bimbo Mini Panqué Nuez","precio":12,"categoria":"Pan dulce","alias":["bimbo","mini panque","mini panqué","nuez","pan dulce"]},
+
+  {"id":158,"nombre":"Bimbo Mantechox Hersheys","precio":15,"categoria":"Pan dulce","alias":["bimbo","mantechox","hersheys","pan dulce"]},
+
+  {"id":159,"nombre":"Bimbo Little Bites","precio":15,"categoria":"Pan dulce","alias":["bimbo","little bites","pan dulce"]},
+
+  {"id":160,"nombre":"Bimbo Colchones 6p","precio":16,"categoria":"Pan dulce","alias":["bimbo","colchones","6p","pan dulce"]},
+
+  {"id":161,"nombre":"Bimbo Nito Variedad 1p","precio":17,"categoria":"Pan dulce","alias":["bimbo","nito","variedad","1p","pan dulce"]},
+
+  {"id":162,"nombre":"Bimbo Croissantines Chocolate 3p","precio":20,"categoria":"Pan dulce","alias":["bimbo","croissantines","chocolate","3p","pan dulce"]},
+
+  {"id":163,"nombre":"Bimbo Conchas 2p","precio":20,"categoria":"Pan dulce","alias":["bimbo","conchas","2p","pan dulce"]},
+
+  {"id":164,"nombre":"Bimbuñuelos 6p Clásico / Canela","precio":22,"categoria":"Pan dulce","alias":["bimbo","bimbuñuelos","bimbunuelos","clasico","clásico","canela","6p","pan dulce"]},
+
+  {"id":165,"nombre":"Bimbo Madalenas","precio":22,"categoria":"Pan dulce","alias":["bimbo","madalenas","pan dulce"]},
+
+  {"id":166,"nombre":"Bimbo Donitas Espolvoreadas 8p","precio":22,"categoria":"Pan dulce","alias":["bimbo","donitas","espolvoreadas","8p","pan dulce"]},
+
+  {"id":167,"nombre":"Bimbo Donas Azucaradas 6p","precio":22,"categoria":"Pan dulce","alias":["bimbo","donas","azucaradas","6p","pan dulce"]},
+
+  {"id":168,"nombre":"Bimbo Panquecitos c/Gotas Chocolate 2p","precio":22,"categoria":"Pan dulce","alias":["bimbo","panquecitos","gotas chocolate","chocolate","2p","pan dulce"]},
+
+  {"id":169,"nombre":"Bimbo Doners 5p","precio":25,"categoria":"Pan dulce","alias":["bimbo","doners","5p","pan dulce"]},
+
+  {"id":170,"nombre":"Bimbo Roles Individuales 3p","precio":25,"categoria":"Pan dulce","alias":["bimbo","roles","individuales","3p","pan dulce"]},
+
+  {"id":171,"nombre":"Bimbo Dúo Nito","precio":28,"categoria":"Pan dulce","alias":["bimbo","duo nito","dúo nito","nito","pan dulce"]},
+
+  {"id":172,"nombre":"Bimbo Mantecadas Variadas","precio":32,"categoria":"Pan dulce","alias":["bimbo","mantecadas","variadas","chispas","nuez","bicolor","vainilla","pan dulce"]},
+
+  {"id":173,"nombre":"Bimbo Panqué Variado","precio":42,"categoria":"Pan dulce","alias":["bimbo","panque","panqué","variado","pan dulce"]},
+
+  {"id":174,"nombre":"Bimbo Roles Familiares","precio":42,"categoria":"Pan dulce","alias":["bimbo","roles","familiares","pan dulce"]},
+
+  {"id":175,"nombre":"Bimbo PanqueChox Choco Avellana 1p 315g","precio":44,"categoria":"Pan dulce","alias":["bimbo","panquechox","choco","avellana","315g","1p","pan dulce"]},
+
+  {"id":176,"nombre":"Bimbo Julita Empanada Cajeta 1p","precio":6,"categoria":"Pan dulce","alias":["bimbo","julita","empanada","cajeta","1p","pan dulce"]},
+
+  {"id":177,"nombre":"Bimbo Mini Pan Tostado Mantequilla","precio":25,"categoria":"Panes","alias":["bimbo","mini pan tostado","mantequilla","pan","panes"]},
+
+  {"id":178,"nombre":"Bimbo Empanizador Crujiente","precio":28,"categoria":"Panes","alias":["bimbo","empanizador","crujiente","panes"]},
+
+  {"id":179,"nombre":"Bimbo Pan Molido Clásico","precio":28,"categoria":"Panes","alias":["bimbo","pan molido","clasico","clásico","panes"]},
+
+  {"id":180,"nombre":"Bimbo Empanizador Sanissimo 200g","precio":35,"categoria":"Panes","alias":["bimbo","empanizador","sanissimo","200g","panes"]},
+
+  {"id":181,"nombre":"Bimbo Pan Tostado","precio":34,"categoria":"Panes","alias":["bimbo","pan tostado","panes"]},
+
+  {"id":182,"nombre":"Bimbo Pan Tostado Doble Fibra","precio":36,"categoria":"Panes","alias":["bimbo","pan tostado","doble fibra","panes"]},
+
+  {"id":183,"nombre":"Bimbo Pan Tostado Integral","precio":36,"categoria":"Panes","alias":["bimbo","pan tostado","integral","panes"]},
+
+  {"id":184,"nombre":"Bimbo Pan Blanco Chico","precio":25,"categoria":"Panes","alias":["bimbo","pan blanco","chico","panes"]},
+
+  {"id":185,"nombre":"Bimbo Pan Integral Chico","precio":28,"categoria":"Panes","alias":["bimbo","pan integral","chico","panes"]},
+
+  {"id":186,"nombre":"Bimbo Medias Noches 8p","precio":46,"categoria":"Panes","alias":["bimbo","medias noches","media noche","8p","panes"]},
+
+  {"id":187,"nombre":"Bimbo Pan Blanco Grande","precio":49,"categoria":"Panes","alias":["bimbo","pan blanco","grande","panes"]},
+
+  {"id":188,"nombre":"Bimbo Bimbollos 8p","precio":52,"categoria":"Panes","alias":["bimbo","bimbollos","8p","panes"]},
+
+  {"id":189,"nombre":"Bimbo Pan Artesano 567g","precio":52,"categoria":"Panes","alias":["bimbo","pan artesano","567g","panes"]},
+
+  {"id":190,"nombre":"Bimbo Pan Integral Grande","precio":52,"categoria":"Panes","alias":["bimbo","pan integral","grande","panes"]},
+
+  {"id":191,"nombre":"Bimbo Bimbollos Súper 6p","precio":54,"categoria":"Panes","alias":["bimbo","bimbollos","super","súper","6p","panes"]},
+
+  {"id":192,"nombre":"Bimbo Bimbollos Parrillero 6p","precio":56,"categoria":"Panes","alias":["bimbo","bimbollos","parrillero","6p","panes"]},
+
+  {"id":193,"nombre":"Bimbo Pan Linaza","precio":62,"categoria":"Panes","alias":["bimbo","pan","linaza","panes"]},
+
+  {"id":194,"nombre":"Bimbo Pan Cero Cero","precio":64,"categoria":"Panes","alias":["bimbo","pan cero cero","cero cero","00","panes"]},
+
+  {"id":195,"nombre":"Bimbo Bollo Brioche 6p","precio":64,"categoria":"Panes","alias":["bimbo","bollo","brioche","6p","panes"]},
+
+  {"id":196,"nombre":"Bimbo Media Noche 12pzs","precio":64,"categoria":"Panes","alias":["bimbo","media noche","12pzs","panes"]},
+
+  {"id":197,"nombre":"Bimbo Bollo Artesano 8p","precio":65,"categoria":"Panes","alias":["bimbo","bollo","artesano","8p","panes"]},
+
+  {"id":198,"nombre":"Bimbo Bollo Súper 12p","precio":90,"categoria":"Panes","alias":["bimbo","bollo","super","súper","12p","panes"]},
+
+  {"id":199,"nombre":"Fruit&Grain Strudel Manzana","precio":12,"categoria":"Barras","alias":["fruit grain","fruit&grain","strudel","manzana","barra","barras"]},
+
+  {"id":200,"nombre":"Bran Frut Piña/Fresa/Mango 58g","precio":12,"categoria":"Barras","alias":["bran frut","piña","pina","fresa","mango","58g","barra","barras"]},
+
+  {"id":201,"nombre":"Barra Multigrano Nuez/Linaza","precio":12,"categoria":"Barras","alias":["barra","barras","multigrano","nuez","linaza"]},
+
+  {"id":202,"nombre":"Bran Frut Granos Ancestrales","precio":12,"categoria":"Barras","alias":["bran frut","granos ancestrales","barra","barras"]},
+
+  {"id":203,"nombre":"Barras Fruit&Grain","precio":15,"categoria":"Barras","alias":["fruit grain","fruit&grain","barra","barras"]},
+
+  {"id":204,"nombre":"Leche Nito","precio":15,"categoria":"Bebidas lácteas","alias":["leche","nito","bebida lactea","bebidas lacteas"]},
+
+  {"id":205,"nombre":"Tortilla de Harina 10p DH","precio":18,"categoria":"Tortillas - Tostadas - Totopos","alias":["tortilla","harina","10p","dh","tortillas"]},
+
+  {"id":206,"nombre":"Tortilla de Harina Burrera 6p DH","precio":28,"categoria":"Tortillas - Tostadas - Totopos","alias":["tortilla","harina","burrera","6p","dh","tortillas"]},
+
+  {"id":207,"nombre":"Salmas 90g SAN","precio":22,"categoria":"Tortillas - Tostadas - Totopos","alias":["salmas","90g","san","sanissimo","tostada"]},
+
+  {"id":208,"nombre":"Tortillinas 15p MTA TR","precio":25,"categoria":"Tortillas - Tostadas - Totopos","alias":["tortillinas","15p","mta","tr","tortillas"]},
+
+  {"id":209,"nombre":"Tortillas Ligeríssimas SAN Clásicas / Linaza","precio":29,"categoria":"Tortillas - Tostadas - Totopos","alias":["tortillas","ligerisimas","ligeríssimas","san","clasicas","clásicas","linaza"]},
+
+  {"id":210,"nombre":"Flow Pack Salmas 8p","precio":31,"categoria":"Tortillas - Tostadas - Totopos","alias":["flow pack","salmas","8p","tostadas"]},
+
+  {"id":211,"nombre":"Tortillinas Parrilleras 10p 290g","precio":30,"categoria":"Tortillas - Tostadas - Totopos","alias":["tortillinas","parrilleras","10p","290g","tortillas"]},
+
+  {"id":212,"nombre":"Tortilla DH 20p 440g","precio":30,"categoria":"Tortillas - Tostadas - Totopos","alias":["tortilla","dh","20p","440g","tortillas"]},
+
+  {"id":213,"nombre":"Tortillinas Ligeras 12p TR","precio":26,"categoria":"Tortillas - Tostadas - Totopos","alias":["tortillinas","ligeras","12p","tr","tortillas"]},
+
+  {"id":214,"nombre":"Tortillinas 22p 561g MTA TR","precio":38,"categoria":"Tortillas - Tostadas - Totopos","alias":["tortillinas","22p","561g","mta","tr","tortillas"]},
+
+  {"id":215,"nombre":"Tortillinas Burreras 10p 580g","precio":40,"categoria":"Tortillas - Tostadas - Totopos","alias":["tortillinas","burreras","10p","580g","tortillas"]},
+
+  {"id":216,"nombre":"Tortillinas 30p 765g Bolsa MTA TR","precio":50,"categoria":"Tortillas - Tostadas - Totopos","alias":["tortillinas","30p","765g","bolsa","mta","tr","tortillas"]},
+
+  {"id":217,"nombre":"Salsas DH 240g Verde, Mora, Chile de árbol y Taquera","precio":20,"categoria":"Tortillas - Tostadas - Totopos","alias":["salsas","dh","240g","verde","mora","chile de arbol","chile de árbol","taquera"]},
+
+  {"id":218,"nombre":"Galleta de Arroz Sanissimo 12g","precio":8,"categoria":"Tostadas - Totopos","alias":["galleta","arroz","sanissimo","12g","tostadas","totopos"]},
+
+  {"id":219,"nombre":"Tostada Plana 15p MR","precio":26,"categoria":"Tostadas - Totopos","alias":["tostada","plana","15p","mr","tostadas"]},
+
+  {"id":220,"nombre":"Tostada estilo Chicharronera DH 220g","precio":28,"categoria":"Tostadas - Totopos","alias":["tostada","chicharronera","dh","220g","tostadas"]},
+
+  {"id":221,"nombre":"Totopos Chilaquiles 280g MR","precio":32,"categoria":"Tostadas - Totopos","alias":["totopos","chilaquiles","280g","mr"]},
+
+  {"id":222,"nombre":"Totopos 280g DH","precio":30,"categoria":"Tostadas - Totopos","alias":["totopos","280g","dh"]},
+
+  {"id":223,"nombre":"Totopos Clásicos Sanissimo","precio":32,"categoria":"Tostadas - Totopos","alias":["totopos","clasicos","clásicos","sanissimo"]},
+
+  {"id":224,"nombre":"Tostaditas Horneadas 20pzs 160g","precio":27,"categoria":"Tostadas - Totopos","alias":["tostaditas","horneadas","20pzs","160g","tostadas"]},
+
+  {"id":225,"nombre":"Tostada Ondulada 30p MR","precio":37,"categoria":"Tostadas - Totopos","alias":["tostada","ondulada","30p","mr","tostadas"]},
+
+  {"id":226,"nombre":"Tostada Clásica 216g Sanissimo","precio":36,"categoria":"Tostadas - Totopos","alias":["tostada","clasica","clásica","216g","sanissimo","tostadas"]},
+
+  {"id":227,"nombre":"Wonder Chocotorro","precio":15,"categoria":"Pan dulce","alias":["wonder","chocotorro","pan dulce"]},
+
+  {"id":228,"nombre":"Wonder Dálmata","precio":15,"categoria":"Pan dulce","alias":["wonder","dalmata","dálmata","pan dulce"]},
+
+  {"id":229,"nombre":"Wonder Twinkies 3p","precio":19,"categoria":"Pan dulce","alias":["wonder","twinkies","3p","pan dulce"]},
+
+  {"id":230,"nombre":"Wonder Hot Dogs 8p","precio":48,"categoria":"Panes","alias":["wonder","hot dogs","hotdog","8p","panes"]},
+
+  {"id":231,"nombre":"Wonder Súper Pan Blanco con Ajonjolí","precio":54,"categoria":"Panes","alias":["wonder","super pan blanco","súper pan blanco","ajonjoli","ajonjolí","panes"]},
+
+  {"id":232,"nombre":"Wonder Súper Bollos 8p 540g","precio":65,"categoria":"Panes","alias":["wonder","super bollos","súper bollos","8p","540g","panes"]},
+
+  {"id":233,"nombre":"Wonder Pan 100% con Ajonjolí","precio":56,"categoria":"Panes","alias":["wonder","pan","100","ajonjoli","ajonjolí","panes"]},
+
+  {"id":234,"nombre":"Oroweat Pan 100pct Integral 680g","precio":80,"categoria":"Panes","alias":["oroweat","pan","integral","680g","100pct","panes"]},
+
+  {"id":235,"nombre":"Oroweat Pan 12 Granos 680g","precio":80,"categoria":"Panes","alias":["oroweat","pan","12 granos","680g","panes"]},
+
+  {"id":236,"nombre":"Oroweat Pan Multigrano 680g","precio":80,"categoria":"Panes","alias":["oroweat","pan","multigrano","680g","panes"]},
+
+  {"id":237,"nombre":"Oroweat Pan Mantequilla ButterMilk 680g","precio":80,"categoria":"Panes","alias":["oroweat","pan","mantequilla","buttermilk","680g","panes"]},
+
+  {"id":238,"nombre":"Marinela Mini Rocko","precio":4,"categoria":"Galletas","alias":["marinela","mini rocko","rocko","galleta","galletas"]},
+
+  {"id":239,"nombre":"Marinela Bon O Bon","precio":6,"categoria":"Galletas","alias":["marinela","bon o bon","bonobon","galleta","galletas"]},
+
+  {"id":240,"nombre":"Marinela Rocko/Rocko Colores","precio":10,"categoria":"Galletas","alias":["marinela","rocko","rocko colores","galleta","galletas"]},
+
+  {"id":241,"nombre":"Marinela Galletas Bites Variedad 57g","precio":15,"categoria":"Galletas","alias":["marinela","bites","variedad","57g","galleta","galletas"]},
+
+  {"id":242,"nombre":"Marinela Bombonete","precio":18,"categoria":"Galletas","alias":["marinela","bombonete","galleta","galletas"]},
+
+  {"id":243,"nombre":"Marinela Barritas Fresa, Piña","precio":20,"categoria":"Galletas","alias":["marinela","barritas","fresa","piña","pina","galleta","galletas"]},
+
+  {"id":244,"nombre":"Marinela Lors","precio":20,"categoria":"Galletas","alias":["marinela","lors","galleta","galletas"]},
+
+  {"id":245,"nombre":"Marinela Platívolos","precio":20,"categoria":"Galletas","alias":["marinela","plativolos","platívolos","galleta","galletas"]},
+
+  {"id":246,"nombre":"Marinela Suavicremas 100g","precio":22,"categoria":"Galletas","alias":["marinela","suavicremas","100g","galleta","galletas"]},
+
+  {"id":247,"nombre":"Marinela Triki Trakes Variedad","precio":22,"categoria":"Galletas","alias":["marinela","triki trakes","variedad","galleta","galletas"]},
+
+  {"id":248,"nombre":"Marinela Sponch","precio":24,"categoria":"Galletas","alias":["marinela","sponch","galleta","galletas"]},
+
+  {"id":249,"nombre":"Marinela Príncipe","precio":24,"categoria":"Galletas","alias":["marinela","principe","príncipe","galleta","galletas"]},
+
+  {"id":250,"nombre":"Marinela Canelitas","precio":24,"categoria":"Galletas","alias":["marinela","canelitas","galleta","galletas"]},
+
+  {"id":251,"nombre":"Marinela Polvorones","precio":24,"categoria":"Galletas","alias":["marinela","polvorones","galleta","galletas"]},
+
+  {"id":252,"nombre":"Marinela Fruti Sponch 8p 124g","precio":32,"categoria":"Galletas","alias":["marinela","fruti sponch","8p","124g","galleta","galletas"]},
+
+  {"id":253,"nombre":"Marinela Maxitubos","precio":34,"categoria":"Galletas","alias":["marinela","maxitubos","galleta","galletas"]},
+
+  {"id":254,"nombre":"Marinela Tubo Galleta Gansito/Pingüino","precio":34,"categoria":"Galletas","alias":["marinela","tubo galleta","gansito","pinguino","pingüino","galleta","galletas"]},
+
+  {"id":255,"nombre":"Marinela Mini Chocotorro 1p 24g","precio":7,"categoria":"Pasteles","alias":["marinela","mini chocotorro","1p","24g","pastelito","pasteles"]},
+
+  {"id":256,"nombre":"Marinela Pastelito Bocadín 1p","precio":8,"categoria":"Pasteles","alias":["marinela","pastelito","bocadin","bocadín","1p","pasteles"]},
+
+  {"id":257,"nombre":"Marinela Mini Gansito NE 24g","precio":8,"categoria":"Pasteles","alias":["marinela","mini gansito","ne","24g","pasteles"]},
+
+  {"id":258,"nombre":"Marinela Mini Pingüino NE 25g","precio":8,"categoria":"Pasteles","alias":["marinela","mini pinguino","mini pingüino","ne","25g","pasteles"]},
+
+  {"id":259,"nombre":"Marinela Mini Choco Roles NE 28g","precio":8,"categoria":"Pasteles","alias":["marinela","mini choco roles","ne","28g","pasteles"]},
+
+  {"id":260,"nombre":"Marinela Pastelito Hersheys 1p 40g","precio":14,"categoria":"Pasteles","alias":["marinela","pastelito","hersheys","1p","40g","pasteles"]},
+
+  {"id":261,"nombre":"Marinela Pastelito Canelitas 1p 58g","precio":14,"categoria":"Pasteles","alias":["marinela","pastelito","canelitas","1p","58g","pasteles"]},
+
+  {"id":262,"nombre":"Marinela Gansito","precio":18,"categoria":"Pasteles","alias":["marinela","gansito","pastelito","pasteles"]},
+
+  {"id":263,"nombre":"Marinela Rollo Fresa","precio":18,"categoria":"Pasteles","alias":["marinela","rollo","fresa","pastelito","pasteles"]},
+
+  {"id":264,"nombre":"Marinela Submarinos","precio":20,"categoria":"Pasteles","alias":["marinela","submarinos","pastelito","pasteles"]},
+
+  {"id":265,"nombre":"Marinela Choco Roles","precio":22,"categoria":"Pasteles","alias":["marinela","choco roles","pastelito","pasteles"]},
+
+  {"id":266,"nombre":"Marinela Pingüinos 2p 80g","precio":22,"categoria":"Pasteles","alias":["marinela","pinguinos","pingüinos","2p","80g","pasteles"]},
+
+  {"id":267,"nombre":"Marinela Pingüinos Hersheys 2p 80g","precio":22,"categoria":"Pasteles","alias":["marinela","pinguinos","pingüinos","hersheys","2p","80g","pasteles"]},
+
+  {"id":268,"nombre":"Marinela Napolitano Duo","precio":25,"categoria":"Pasteles","alias":["marinela","napolitano","duo","pastelito","pasteles"]},
+
+  {"id":269,"nombre":"Marinela Duo Mini Pay Piña/Nuez","precio":25,"categoria":"Pasteles","alias":["marinela","duo","mini pay","piña","pina","nuez","pasteles"]},
+
+  {"id":270,"nombre":"Marinela Pingüinos 3p","precio":28,"categoria":"Pasteles","alias":["marinela","pinguinos","pingüinos","3p","pasteles"]},
+
+  {"id":271,"nombre":"Leche Gansito","precio":15,"categoria":"Bebidas lácteas","alias":["leche","gansito","bebida lactea","bebidas lacteas","marinela"]},
+
+  {"id":272,"nombre":"Tía Rosa Doraditas 58g","precio":10,"categoria":"Pan dulce","alias":["tia rosa","tía rosa","doraditas","58g","pan dulce"]},
+
+  {"id":273,"nombre":"Tía Rosa Madalenas Cuadradas 1p 44g","precio":10,"categoria":"Pan dulce","alias":["tia rosa","tía rosa","madalenas","cuadradas","1p","44g","pan dulce"]},
+
+  {"id":274,"nombre":"Tía Rosa Mantecadas Vainilla 6p","precio":10,"categoria":"Pan dulce","alias":["tia rosa","tía rosa","mantecadas","vainilla","6p","pan dulce"]},
+
+  {"id":275,"nombre":"Tía Rosa Bigotes Cajeta y Chocolate","precio":16,"categoria":"Pan dulce","alias":["tia rosa","tía rosa","bigotes","cajeta","chocolate","pan dulce"]},
+
+  {"id":276,"nombre":"Tía Rosa Doraditas 110g/127g","precio":18,"categoria":"Pan dulce","alias":["tia rosa","tía rosa","doraditas","110g","127g","pan dulce"]},
+
+  {"id":277,"nombre":"Tía Rosa Cuernitos 2p","precio":20,"categoria":"Pan dulce","alias":["tia rosa","tía rosa","cuernitos","2p","pan dulce"]},
+
+  {"id":278,"nombre":"Tía Rosa Pachoncitos 2p","precio":22,"categoria":"Pan dulce","alias":["tia rosa","tía rosa","pachoncitos","2p","pan dulce"]},
+
+  {"id":279,"nombre":"Tía Rosa Conchas 2p","precio":22,"categoria":"Pan dulce","alias":["tia rosa","tía rosa","conchas","2p","pan dulce"]},
+
+  {"id":280,"nombre":"Tía Rosa Semitas 2p","precio":25,"categoria":"Pan dulce","alias":["tia rosa","tía rosa","semitas","2p","pan dulce"]},
+
+  {"id":281,"nombre":"Tía Rosa Mantecadas Vainilla 3p","precio":26,"categoria":"Pan dulce","alias":["tia rosa","tía rosa","mantecadas","vainilla","3p","pan dulce"]},
+
+  {"id":282,"nombre":"Tía Rosa Mantecadas Chocolate 3p","precio":26,"categoria":"Pan dulce","alias":["tia rosa","tía rosa","mantecadas","chocolate","3p","pan dulce"]},
+
+  {"id":283,"nombre":"Tía Rosa Mantecadas NaranjaChoco 3p 165g TR","precio":26,"categoria":"Pan dulce","alias":["tia rosa","tía rosa","mantecadas","naranjachoco","naranja choco","3p","165g","tr","pan dulce"]},
+
+  {"id":284,"nombre":"Tía Rosa Bigotes Duo Chocolate 2p 160g","precio":28,"categoria":"Pan dulce","alias":["tia rosa","tía rosa","bigotes","duo","chocolate","2p","160g","pan dulce"]},
+
+  {"id":285,"nombre":"Tía Rosa Panqué Casero TR 235grs","precio":35,"categoria":"Pan dulce","alias":["tia rosa","tía rosa","panque","panqué","casero","235grs","tr","pan dulce"]},
+
+  {"id":286,"nombre":"Polvoroncito 1p (Panera)","precio":2,"categoria":"Galletas","alias":["polvoroncito","panera","1p","galleta","galletas"]},
+
+  {"id":287,"nombre":"Galletas Linaza / Avena / Arándano","precio":12,"categoria":"Galletas","alias":["galletas","linaza","avena","arandano","arándano","galleta"]},
+
+  {"id":288,"nombre":"Pastitas Cuadradas 7p 54g","precio":12,"categoria":"Galletas","alias":["pastitas","cuadradas","7p","54g","galleta","galletas"]},
+
+  {"id":289,"nombre":"Mini Polvoroncitos 5p 50g","precio":12,"categoria":"Galletas","alias":["mini polvoroncitos","5p","50g","galleta","galletas"]},
+
+  {"id":290,"nombre":"Polvoroncitos Caseros 6p","precio":18,"categoria":"Galletas","alias":["polvoroncitos","caseros","6p","galleta","galletas"]},
+
+  {"id":291,"nombre":"Tartinas 8p","precio":20,"categoria":"Galletas","alias":["tartinas","8p","galleta","galletas"]},
+
+  {"id":292,"nombre":"Suandy Tartaletas Fresa 7p","precio":28,"categoria":"Galletas","alias":["suandy","tartaletas","fresa","7p","galleta","galletas"]},
+
+  {"id":293,"nombre":"Suandy Danesas 85g","precio":28,"categoria":"Galletas","alias":["suandy","danesas","85g","galleta","galletas"]},
+
+  {"id":294,"nombre":"Suandy Pastisetas 12p 90g","precio":28,"categoria":"Galletas","alias":["suandy","pastisetas","12p","90g","galleta","galletas"]},
+
+  {"id":295,"nombre":"Suandy Pastisetas Sin Azúcar","precio":30,"categoria":"Galletas","alias":["suandy","pastisetas","sin azucar","sin azúcar","galleta","galletas"]},
+
+  {"id":296,"nombre":"Suandy Pastisetas Chocolate","precio":30,"categoria":"Galletas","alias":["suandy","pastisetas","chocolate","galleta","galletas"]},
+
+  {"id":297,"nombre":"Deliciosas Vainilla 60g","precio":10,"categoria":"Galletas","alias":["deliciosas","vainilla","60g","galleta","galletas"]},
+
+  {"id":298,"nombre":"Deliciosas Chocochispas 60g","precio":10,"categoria":"Galletas","alias":["deliciosas","chocochispas","60g","galleta","galletas"]},
+
+  {"id":299,"nombre":"Variedad Favoritas 100g","precio":12,"categoria":"Galletas","alias":["variedad","favoritas","100g","galleta","galletas"]},
+
+  {"id":300,"nombre":"Canapinas 80g","precio":14,"categoria":"Galletas","alias":["canapinas","80g","galleta","galletas"]},
+
+  {"id":301,"nombre":"Coloretes 52gr","precio":14,"categoria":"Galletas","alias":["coloretes","52gr","galleta","galletas"]},
+
+  {"id":302,"nombre":"Marías 1p 170g","precio":18,"categoria":"Galletas","alias":["marias","marías","1p","170g","galleta","galletas"]},
+
+  {"id":303,"nombre":"Variedad Favoritas 155g","precio":18,"categoria":"Galletas","alias":["variedad","favoritas","155g","galleta","galletas"]},
+
+  {"id":304,"nombre":"Saladas Clásicas 175g","precio":20,"categoria":"Galletas","alias":["saladas","clasicas","clásicas","175g","galleta","galletas"]},
+
+  {"id":305,"nombre":"Canapinas 140g","precio":20,"categoria":"Galletas","alias":["canapinas","140g","galleta","galletas"]},
+
+  {"id":306,"nombre":"Deliciosas Vainilla 130gr","precio":20,"categoria":"Galletas","alias":["deliciosas","vainilla","130gr","galleta","galletas"]},
+
+  {"id":307,"nombre":"Deliciosas Chocochispas 130g","precio":20,"categoria":"Galletas","alias":["deliciosas","chocochispas","130g","galleta","galletas"]},
+
+  {"id":308,"nombre":"Animalitos Karamelo 200g","precio":22,"categoria":"Galletas","alias":["animalitos","karamelo","caramelo","200g","galleta","galletas"]},
+
+  {"id":309,"nombre":"Decanelas Rosquillas 1p 185g","precio":24,"categoria":"Galletas","alias":["decanelas","rosquillas","1p","185g","galleta","galletas"]},
+
+  {"id":310,"nombre":"Qué Kremas 4p","precio":8,"categoria":"Galletas","alias":["que kremas","qué kremas","4p","galleta","galletas"]},
+
+  {"id":311,"nombre":"Qué Hit Mora Coco 6p","precio":8,"categoria":"Galletas","alias":["que hit","qué hit","mora","coco","6p","galleta","galletas"]},
+
+  {"id":312,"nombre":"Qué Choxs 6p","precio":12,"categoria":"Galletas","alias":["que choxs","qué choxs","6p","galleta","galletas"]},
+
+  {"id":313,"nombre":"Magmas 200g","precio":25,"categoria":"Galletas","alias":["magmas","200g","galleta","galletas"]},
+
+  {"id":314,"nombre":"Deliciosas Betunadas 230g","precio":28,"categoria":"Galletas","alias":["deliciosas","betunadas","230g","galleta","galletas"]},
+
+  {"id":315,"nombre":"Deliciosas Chochitos 230g","precio":28,"categoria":"Galletas","alias":["deliciosas","chochitos","230g","galleta","galletas"]},
+
+  {"id":316,"nombre":"Deliciosas Vainilla 230g","precio":28,"categoria":"Galletas","alias":["deliciosas","vainilla","230g","galleta","galletas"]},
+
+  {"id":317,"nombre":"Deliciosas Chocochispas 230g","precio":28,"categoria":"Galletas","alias":["deliciosas","chocochispas","230g","galleta","galletas"]},
+
+  {"id":318,"nombre":"Deliciosas Bombón 170g","precio":30,"categoria":"Galletas","alias":["deliciosas","bombon","bombón","170g","galleta","galletas"]},
+
+  {"id":319,"nombre":"Gabi Besos Nuez 60g","precio":10,"categoria":"Galletas","alias":["gabi","besos","nuez","60g","galleta","galletas"]},
+
+  {"id":320,"nombre":"Gabi Orejitas Mantequilla 71g","precio":14,"categoria":"Galletas","alias":["gabi","orejitas","mantequilla","71g","galleta","galletas"]},
+
+  {"id":321,"nombre":"Gabi Mías Arándano 96gs","precio":16,"categoria":"Galletas","alias":["gabi","mias","mías","arandano","arándano","96gs","galleta","galletas"]},
+
+  {"id":322,"nombre":"Gabi Tartas MIX","precio":22,"categoria":"Galletas","alias":["gabi","tartas","mix","galleta","galletas"]},
+
+  {"id":323,"nombre":"Gabi Tartas Cajeta/Chabacano","precio":24,"categoria":"Galletas","alias":["gabi","tartas","cajeta","chabacano","galleta","galletas"]},
+
+  {"id":324,"nombre":"Gabi Surtido Fina Variedad 200g","precio":38,"categoria":"Galletas","alias":["gabi","surtido","fina variedad","200g","galleta","galletas"]},
+
+  {"id":325,"nombre":"Aguilita chico","precio":6,"categoria":"Dulces","alias":["aguilita","aguilitas","chico","dulce","dulces"]},
+
+  {"id":326,"nombre":"Pistaches","precio":13,"categoria":"Dulces","alias":["pistache","pistaches","dulce","dulces","botana","botanas"]},
+
+  {"id":327,"nombre":"Aguilita grande","precio":9,"categoria":"Dulces","alias":["aguilita","aguilitas","grande","dulce","dulces"]},
+
+  {"id":328,"nombre":"Paleta Bolonia limón","precio":17,"categoria":"Bolonia","alias":["bolonia","paleta","paletas","limon","limón","nieve","nieves","helado","helados"]},
+
+  {"id":329,"nombre":"Paleta Bolonia jamaica","precio":17,"categoria":"Bolonia","alias":["bolonia","paleta","paletas","jamaica","nieve","nieves","helado","helados"]},
+
+  {"id":330,"nombre":"Paleta Bolonia coco","precio":17,"categoria":"Bolonia","alias":["bolonia","paleta","paletas","coco","nieve","nieves","helado","helados"]},
+
+  {"id":331,"nombre":"Paleta Bolonia mango con Tajín","precio":25,"categoria":"Bolonia","alias":["bolonia","paleta","paletas","mango","tajin","tajín","mango con tajin","nieve","nieves","helado","helados"]},
+
+  {"id":332,"nombre":"Paleta Bolonia fresa con vainilla","precio":25,"categoria":"Bolonia","alias":["bolonia","paleta","paletas","fresa","vainilla","fresa con vainilla","nieve","nieves","helado","helados"]},
+
+  {"id":333,"nombre":"Paleta Bolonia pay de limón","precio":25,"categoria":"Bolonia","alias":["bolonia","paleta","paletas","pay","pay de limon","pay de limón","limon","limón","nieve","nieves","helado","helados"]},
+
+  {"id":334,"nombre":"Paleta Bolonia 3 chocolates","precio":28,"categoria":"Bolonia","alias":["bolonia","paleta","paletas","3 chocolates","tres chocolates","chocolate","nieve","nieves","helado","helados"]},
+
+  {"id":335,"nombre":"Paleta Bolonia vainilla con chocolate","precio":28,"categoria":"Bolonia","alias":["bolonia","paleta","paletas","vainilla","chocolate","vainilla con chocolate","nieve","nieves","helado","helados"]},
+
+  {"id":336,"nombre":"Paleta Bolonia plátano","precio":28,"categoria":"Bolonia","alias":["bolonia","paleta","paletas","platano","plátano","nieve","nieves","helado","helados"]},
+
+  {"id":337,"nombre":"Paleta Bolonia especial","precio":30,"categoria":"Bolonia","alias":["bolonia","paleta","paletas","especial","nieve","nieves","helado","helados"]},
+
+  {"id":338,"nombre":"Barquiyete","precio":30,"categoria":"Bolonia","alias":["bolonia","barquiyete","barquillo","barquilleto","nieve","nieves","helado","helados"]},
+
+  {"id":339,"nombre":"Helado de vainilla","precio":30,"categoria":"Bolonia","alias":["bolonia","helado","helados","vainilla","nieve","nieves"]},
+
+  {"id":340,"nombre":"Pay de limón","precio":15,"categoria":"Bolonia","alias":["bolonia","pay","pay de limon","pay de limón","limon","limón","nieve","nieves","helado","helados"]},
+
+  {"id":341,"nombre":"Sándwich de helado","precio":25,"categoria":"Bolonia","alias":["bolonia","sandwich","sándwich","sandwich de helado","helado","helados","nieve","nieves"]}
 
 ];
